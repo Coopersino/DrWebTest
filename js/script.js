@@ -44,12 +44,12 @@ loginBtn.addEventListener('click', function(event) {
 var showHidePassBtn = document.querySelector('.login-form__caption-btn');
 showHidePassBtn.addEventListener('click', function(event) {
     event.preventDefault();
-    if (passwordInput.type =='passwordInput') {
+    if (passwordInput.type =='password') {
         passwordInput.type = 'text';
         showHidePassBtn.classList.add('login-form__caption-btn--show');
         showHidePassBtn.classList.remove('.login-form__caption-btn');
     } else {
-        passwordInput.type = 'passwordInput';
+        passwordInput.type = 'password';
         showHidePassBtn.classList.remove('login-form__caption-btn--show');
         showHidePassBtn.classList.add('.login-form__caption-btn');
     }

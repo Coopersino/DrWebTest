@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Удобная форма авторизации</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="info-block info-block--show">
+                <h1 class="info-block__title">
+                    Мои критерии удобной формы авторизации
+                </h1>
+                <ul class="info-block__list">
+                    <li class="info-block__item">
+                        При открытии формы автоматически перемещать фокус на поле ввода логина.
+                    </li>
+                    <li class="info-block__item">
+                        Использовать почту или логин для авторизации.
+                    </li>
+                    <li class="info-block__item">
+                        Дать возможность посмотреть пароль скрывающийся за звездочками.
+                    </li>
+                    <li class="info-block__item">
+                        Использовать модальные окна, они уменьшают ощущение продолжительной последовательности действий.
+                    </li>
+                    <li class="info-block__item">
+                        Использовать понятные надписи на кнопках, избегать абстрактных "далее" или "продолжить".
+                    </li>
+                    <li class="info-block__item">
+                        Использовать отдельные заголовки для полей, не размещать их в поле ввода.
+                    </li>
+                    <li class="info-block__item">
+                        Использовать клавиатуру для управления формой. Закрывать форму по нажатию "Esc"
+                    </li>
+                    <li class="info-block__item">
+                        Использование анимации для привлечения внимания, объяснения того что происходит и развлечения пользователя.
+                    </li>
+                </ul>
+                <div class="user-block">
+                    <a class="show-form-btn" href="#">Показать форму</a>
+                </div>
+            </div>
+            <div class="popup">
+                <button class="close-btn" title="Закрыть">Закрыть</button>
+                <form class="login-form" action="hello.html" method="post">
+                    <h2 class="login-form__title">Личный кабинет</h2>
+                    <div class="login-form__input-block">
+                        <label for="login" class="login-form__caption">Логин</label>
+                        <input type="text" class="login-form__input" name="login" placeholder="Введите логин или email" id="login">
+                    </div>
+                    <div class="login-form__input-block">
+                        <label for="password" class="login-form__caption-btn">Пароль</label>
+                        <input type="password" class="login-form__input" name="password" placeholder="Введите пароль" id="password"> <?xml version="1.0" encoding="utf-8"?>
+                    </div>
+                    <input type="checkbox" name="remember" id="login-form__remember-me">
+                    <label for="login-form__remember-me">Запомнить меня</label>
+                    <a href="#" class="login-form__restore">Восстановить пароль</a>
+                    <div class="login-form__input-block">
+                        <label for="submit-btn" class="login-form__submit-btn-error">Ошибка, неверный логин или пароль</label>
+                        <button type="submit" class="btn" id="submit-btn">Войти</button>
+                    </div>
+                </form>
+            </div>
+            <div class="empty"></div>
+        </div>
+        <div class="footer">
+            Виталий Шешин +7(951)679-29-41
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
